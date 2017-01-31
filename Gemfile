@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Specify your gem's dependencies
 gem "rilakkuma", :path => "../rilakkuma"
-gem "rack"
+#gem "rack"
 
 group :development do
   gem 'rerun'

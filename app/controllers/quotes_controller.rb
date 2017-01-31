@@ -1,8 +1,6 @@
 class QuotesController < Rilakkuma::Controller
   def a_quote
-    "There is nothing either good or badish " +
-      "but thinking makes it so."
-      "\n<pre>\n#{env}\n</pre>"
+    render :a_quote, :noun => winking
   end
 
   def exception
