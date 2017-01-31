@@ -1,13 +1,33 @@
+PATH
+  remote: ../rilakkuma
+  specs:
+    rilakkuma (0.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    rilakkuma (0.1.0)
+    ffi (1.9.17)
+    listen (1.3.1)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      rb-kqueue (>= 0.2)
+    rack (1.6.4)
+    rb-fsevent (0.9.8)
+    rb-inotify (0.9.8)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.4)
+      ffi (>= 0.5.0)
+    rerun (0.8.1)
+      listen (>= 1.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rilakkuma
+  listen (= 1.3.1)
+  rack
+  rerun
+  rilakkuma!
 
 BUNDLED WITH
    1.14.3
