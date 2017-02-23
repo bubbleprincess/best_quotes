@@ -1,0 +1,16 @@
+<form accept-charset="UTF-8" action="update" id="edit_quote" method="post">
+  <input name="_method" type="hidden" value="patch" />
+    <h1>Edit the quote information</h1>
+      <%= form_for(@quotes, url: update do |q| %>
+        <%= q.label :quote %>
+        <%= q.text_field :quote, class: 'form-control' %>
+
+        <%= q.label :submitter %>
+        <%= q.email_field :submitter, class: 'form-control' %>
+
+        <%= q.label :attribution %>
+        <%= q.password_field :attribution, class: 'form-control' %>
+
+        <%= q.submit "Save changes", class: "btn btn-primary" %>
+      <% end %>
+</form>
